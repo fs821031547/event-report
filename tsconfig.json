@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "ESNEXT",
+    "target": "ES5",
+    "noEmit": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "node_modules",
+        "./lib"
+      ]
+    }
+  },
+  "include": [
+    "./lib"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

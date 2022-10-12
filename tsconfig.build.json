@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": "./lib",
+    "declaration": true,
+    "declarationDir": "declaration"
+  },
+  "include": [
+    "./lib"
+  ]
+}

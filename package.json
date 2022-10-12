@@ -1,0 +1,49 @@
+{
+  "name": "event-report",
+  "version": "1.0.0",
+  "description": "前端埋点统计插件，对标后端数据采集服务。",
+  "author": "fs821031547",
+  "homepage": "https://github.com/fs821031547/event-report#readme",
+  "license": "ISC",
+  "main": "./dist/StatisticsPlugin.umd.js",
+  "module": "./dist/StatisticsPlugin.esm.js",
+  "types": "./declaration/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "declaration"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fs821031547/event-report.git"
+  },
+  "scripts": {
+    "declaration": "rm -rf ./declaration && tsc -p tsconfig.build.json",
+    "build": "rm -rf ./dist && rollup -c && npm run declaration"
+  },
+  "bugs": {
+    "url": "https://github.com/fs821031547/event-report/issues"
+  },
+  "peerDependencies": {
+    "fingerprintjs2": "^2.1.0",
+    "ua-parser-js": "^0.7.21"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "lerna": "^3.16.4",
+    "rollup": "^2.1.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "typescript": "^3.8.3",
+    "fingerprintjs2": "^2.1.0",
+    "ua-parser-js": "^0.7.21"
+  }
+}
